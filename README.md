@@ -47,3 +47,9 @@ Said server was hooked up to my home internet (Google Fiber), and at one point, 
 At peak, I found I was able to run (via Docker instances) 5 dfferent nodes at the same time - ETH Mainnet + 4 sidechains (though, after about two hours, something would crash; I typically only ran Polygon & Binance Smart Chain regularly).
 
 Monitoring was achieved via server outputs via webhook to my personal Discord server, as well as a Datadog dashboard that reported transactions, profits, errors, etc.
+
+### Results
+
+While the first two iterations were largely unsuccessful, I was able to learn enough about what I was doing and what needed to be done that I was able to succeed with Tarkin. Tarkin is currently decomissioned (it reqwuires some amount of upkeep as the on-chain situation evolves, and I don't currently have the time for that), but while it was running, it generated a decent amount of profit - nothing crazy, but enough to get by on in San Francisco, where I lived at the time. I call that a major achievement.
+
+You can see the EOA that I used to run Tarkin on the two main chains I operated on - [Polygon](https://polygonscan.com/address/0x96fa6ACfc5F683Db191234c74D315e5D732b07c0) and [Binance Smart Chain](https://bscscan.com/address/0x96fa6ACfc5F683Db191234c74D315e5D732b07c0), which have 10,000+ and 400,000 transactions, respectively.
