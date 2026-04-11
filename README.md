@@ -36,7 +36,7 @@ Transaction selection to simulate is crucial; we prune transactions from EOAs to
 
 Tarkin connects to the blockchain node on the same machine via IPC - basically, an internal socket connection, which eliminates all the overhead of both TCP and HTTP, which would be a massive amount of data and slowdown if we connected that way.
 
-Tarkin is multi-threaded, and spawns up to 8 sub-processes for simulation. Tarkin not only simulates new transactions, but old/stale ones in the mempool as well, since blockchain state may have evolved since the previuos non-profitable simulates of older, not-yet-executed transactions.
+Tarkin is multi-threaded, and spawns up to 8 sub-processes for simulation. Tarkin not only simulates new transactions, but old/stale ones in the mempool as well, since blockchain state may have evolved since the previous non-profitable simulates of older, not-yet-executed transactions.
 
 ### Infrastructure / Devops
 
