@@ -1,5 +1,3 @@
-# Caleb Ditchfield (klob.eth)
-
 # Selected Projects
 
 ## Tarkin - Generalized Frontrunner MEV Bot
