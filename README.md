@@ -1,4 +1,4 @@
-# Caleb Ditchfield / xklob
+# Caleb Ditchfield (klob.eth)
 
 # Selected Projects
 
