@@ -6,7 +6,7 @@ Inspired by the Paradigm [Dark Forest paper](https://www.paradigm.xyz/2020/08/et
 
 ### Capabilities
 
-While running, Tarkin would inspect the mempool of the connected Node, and upon hearing of any new transactions, would simulate those transactions *as if Tarkin had sent them*, evaluating the result for profitability. This is a rather large simplification, as "evaluating the result for profitability" includes simulating not just the transaction as-is in the mempool, but many variants of the transaction, all simulated as if sent through a rather large Solidity smart contract written up specifically for Tarkin. Here's a small subset of the actions taken during the post-new-tx-in-mempool hook:
+While running, Tarkin would inspect the mempool of the connected node, and upon hearing of any new transactions, would simulate those transactions *as if Tarkin had sent them*, evaluating the result for profitability. This is a rather large simplification, as "evaluating the result for profitability" includes simulating not just the transaction as-is in the mempool, but many variants of the transaction, all simulated as if sent through a rather large Solidity smart contract written up specifically for Tarkin. Here's a small subset of the actions taken during the post-new-tx-in-mempool hook:
 
  - Simulate the base transaction as if we sent it
  - Check the transaction for any ERC-20 token addresses in the hexdata
