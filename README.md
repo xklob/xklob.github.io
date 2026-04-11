@@ -10,7 +10,7 @@ While running, Tarkin would inspect the mempool of the connected node, and upon 
 
  - Simulate the base transaction as if we sent it
  - Check the transaction for any ERC-20 token addresses in the hexdata
- - Simulate a bundled transaction where we approve any ERC-20s to a set of known found in hexdata before sending the actual tx
+ - Simulate a bundled transaction where we approve any ERC-20s found to a set of known dexes
  - Find-and-replace any EOA addresses we find in hexdata with our own
  - Check any internal transaction recipients for dexes; approve tokens to those dexes as part of a multi-tx
  - Check ERC-20 balance differences as part of the simulated transaction; re-simulate with an attempt to sell said ERC20 at a known dex
