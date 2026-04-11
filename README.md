@@ -28,7 +28,15 @@ This smart contract not only simulates transactions and returns results, but sca
 
 #### Typescript
 
-todo
+Tarkin's codebase is a standard Node project based in Typescript, with an executable runner and a few utility scripts for deploying the main Solidity smart contract onto various blockchains. It has integrated console output recording and hooks to report status updates to both Discord and Datadog.
+
+The main loop listens for new transactions in the mempool, and, upon hearing them, simulates transactions as described above. It has an extensive set of hard-coded logic for what variants of the tx to attempt, such as "If I find an EOA address in the tx hexdata, simulate replacing that address with our own". Often, one transaction will be simulated with as much as 250 variants, if the transaction is complicated enough. 
+
+Transaction selection to simulate is crucial; we prune transactions from EOAs to EOAs, transactions from known baiters, etc.
+
+Tarkin connects to the blockchain node on the same machine via IPC - basically, an internal socket connection, which eliminates all the overhead of both TCP and HTTP, which would be a massive amount of data and slowdown if we connected that way.
+
+Tarkin is multi-threaded, and spawns up to 8 sub-processes for simulation. Tarkin not only simulates new transactions, but old/stale ones in the mempool as well, since blockchain state may have evolved since the previuos non-profitable simulates of older, not-yet-executed transactions.
 
 ### Infrastructure / Devops
 
