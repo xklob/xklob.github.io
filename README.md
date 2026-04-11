@@ -8,7 +8,7 @@ Inspired by the Paradigm [Dark Forest paper](https://www.paradigm.xyz/2020/08/et
 
 ### Capabilities
 
-tod
+todo
 
 ### Infrastructure
 
