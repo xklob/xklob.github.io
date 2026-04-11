@@ -6,7 +6,16 @@ Inspired by the Paradigm [Dark Forest paper](https://www.paradigm.xyz/2020/08/et
 
 ### Capabilities
 
-todo
+While running, Tarkin would inspect the mempool of the connected Node, and upon hearing of any new transactions, would simulate those transactions *as if Tarkin had sent them*, evaluating the result for profitability. This is a rather large simplification, as "evaluating the result for profitability" includes simulating not just the transaction as-is in the mempool, but many variants of the transaction, all simulated as if sent through a rather large Solidity smart contract written up specifically for Tarkin. Here's a small subset of the actions taken during the post-new-tx-in-mempool hook:
+
+ - Simulate the base transaction as if we sent it
+ - Check the transaction for any ERC-20 token addresses in the hexdata
+ - Simulate a bundled transaction where we approve any ERC-20s to a set of known found in hexdata before sending the actual tx
+ - Find-and-replace any EOA addresses we find in hexdata with our own
+ - Check any internal transaction recipients for dexes; approve tokens to those dexes as part of a multi-tx
+ - Check ERC-20 balance differences as part of the simulated transaction; re-simulate with an attempt to sell said ERC20 at a known dex
+
+Unfortunately, the possibility space for number of potential transactions to simulate here grows *incredibly* quickly. Tarkin can simulate and evaluate around 5,000 transactions per second, which is actually very good, but we have to be quite selective about *what* to simulate because the number of options grows exponentially with each criterion we add.
 
 ### Code
 
