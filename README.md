@@ -69,4 +69,4 @@ In Q2 2023, shortly after GPT4 was released to the public via Azure, I contracte
 
 All of the above was designed, prototyped, coded, and tested during the one-month contract with Spearbit.
 
-Codebase can be found on my GitHub: [xklob/spearbot-node](https://github.com/xklob/spearbot-node)
+Codebase can be found on my GitHub: [xklob/spearbot-node](https://github.com/xklob/spearbot)
