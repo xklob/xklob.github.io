@@ -2,7 +2,7 @@
 
 ## Projects List
 
-### [Tarkin - Generalized Frontrunner MEV Bot](#tarkin)
+### [Tarkin - Generalized Frontrunner MEV Bot & Arbitrage Platform](#tarkin)
 ### [Spearbot - Automated Agent-Based Vulnerability Scanner](#spearbot)
 
 ## Tarkin
