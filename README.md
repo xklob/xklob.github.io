@@ -1,3 +1,9 @@
+# Caleb Ditchfield | Blockchain, Security, & Smart Contract Engineer
+- [LinkedIn Profile](https://linkedin.com/in/caleb-ditchfield)
+- [GitHub: xklob](https://github.com/xklob)
+- [Ethereum: klob.eth](https://etherscan.io/address/0x11e52c75998fe2e7928b191bfc5b25937ca16741)
+- [Resume Here](https://docs.google.com/document/d/1uKyQhBE_JpisyrjcahjxFdeWncUqXWDD/)
+
 # Selected Projects
 
 ## Projects List
