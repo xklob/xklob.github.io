@@ -2,10 +2,12 @@
 
 ## Projects
 
-### [Tarkin - Generalized Frontrunner MEV Bot](#Tarkin-Generalized-Frontrunner-MEV-Bot)
-### [Spearbot - Automated Agent-Based Vulnerability Scanner](#Spearbot-Automated-Agent-Based-Vulnerability-Scanner)
+### [Tarkin - Generalized Frontrunner MEV Bot](#tarkin)
+### [Spearbot - Automated Agent-Based Vulnerability Scanner](#spearbot)
 
-## Tarkin - Generalized Frontrunner MEV Bot
+## Tarkin
+
+Generalized Frontrunner MEV Bot
 
 Inspired by the Paradigm [Dark Forest paper](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest) published in late 2020, I set out to build the so-called "cosmic horror" named in the paper - a generalized frontrunner. In the words of Dan Robinson, this bot would "look for any transaction that they could profitably frontrun by copying it and replacing addresses with their own" in order to create money out of thin air. After several frustrating iterations, numerous roadblocks, and much learning, I arrived at the first *working* version on the third attempt: [Tarkin](https://en.wikipedia.org/wiki/Grand_Moff_Tarkin).
 
@@ -59,7 +61,8 @@ While the first two iterations were largely unsuccessful, I was able to learn en
 
 You can see the EOA that I used to run Tarkin on the two main chains I operated on - [Polygon](https://polygonscan.com/address/0x96fa6ACfc5F683Db191234c74D315e5D732b07c0) and [Binance Smart Chain](https://bscscan.com/address/0x96fa6ACfc5F683Db191234c74D315e5D732b07c0), which have 10,000+ and 400,000 transactions, respectively.
 
-## Spearbot - Automated Agent-Based Vulnerability Scanner
-(for Solidity Smart Contracts with GPT4, Pinecone, and RAG)
+## Spearbot
+
+Automated Agent-Based Vulnerability Scanner for Solidity Smart Contracts with GPT4, Pinecone, and RAG
 
 In Q2 2023, shortly after GPT4 was released to the public via Azure, I contracted with Spearbit Labs (linkedin.com/company/spearbit-labs) to develop an agent capable of analyzing blockchain protocols and smart contract architecture for exploits and potential vulnerabilities. While limited in its effectiveness due to the small context window and relatively low intelligence of GPT4 (compared to GPT5 and flagship large language models), effective use of the Langchain framework along with a Pinecone vectorstore and retrieval-augmented generation (RAG) allowed the system to accurately identify and diagnose common Solidity exploit patterns, such as re-entrancy attacks, loss-of-ownership scenarios, and other non-novel attacks. This was a limited contract for one month only, but I was able to achieve all of the above in this time period. Codebase can be found on my GitHub: github.com/xklob/spearbot-node
