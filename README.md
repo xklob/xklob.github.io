@@ -1,4 +1,4 @@
-# Selected Projects (Under Construction)
+# Selected Projects
 
 ## Projects List
 
