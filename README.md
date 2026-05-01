@@ -4,6 +4,7 @@
 
 ### [Tarkin - Generalized Frontrunner MEV Bot & Arbitrage Platform](#tarkin)
 ### [Spearbot - Automated Agent-Based Vulnerability Scanner](#spearbot)
+### [Mineable GemTokens - Atlanta Blockchain Hackathon 2018 1st Place Winner](#mineable-gemtokens)
 
 ## Tarkin
 
@@ -69,4 +70,11 @@ In Q2 2023, shortly after GPT4 was released to the public via Azure, I contracte
 
 All of the above was designed, prototyped, coded, and tested during the one-month contract with Spearbit.
 
-Codebase can be found on my GitHub: [xklob/spearbot](https://github.com/xklob/spearbot)
+Codebase can be found on my GitHub: [xklob/spearbot](https://github.com/xklob/spearbot).
+
+## Mineable GemTokens
+
+Achieved first place at the Atlanta "DappHack" Blockchain Hackathon in 2018. Re-purposed frameworks from the ERC-721 (non-fungible token / NFT) and the ERC-918 (mineable token / 0xBitcoin) specifications to build a mineable, fungible token with a working prototype and single-page web application within 24 hours of ideation. Submission included a working GPU miner for the token and functional front-end created with VUeJS showing mined "gems" and their stats (such as rarity, value, etc).
+
+Project code can be found on my GitHub: [xklob/MineableGemToken](https://github.com/xklob/MineableGemToken)
+
