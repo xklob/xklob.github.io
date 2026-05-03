@@ -8,9 +8,24 @@
 
 ## Projects List
 
+### [Codex Repo Template](#codex-repo-template)
 ### [Tarkin - Generalized Frontrunner MEV Bot & Arbitrage Platform](#tarkin)
 ### [Spearbot - Automated Agent-Based Vulnerability Scanner](#spearbot)
 ### [Mineable GemTokens - Atlanta Blockchain Hackathon 2018 1st Place Winner](#mineable-gemtokens)
+
+## Codex Repo Template
+
+**This repository is a starting point for agentic-forward software projects with Codex - projects that expect coding agents to participate in design, implementation, review, and maintenance from the beginning.**
+
+Created a template repository for agent-forward coding; this is initially set up as a Codex template, but can be easily adapted for Claude Code, Gemini, or other agentic coding LLM agents.
+
+By default it includes:
+ - stable root documents that define current product truth, future direction, code style, design language, architecture, and execution-planning expectations
+ - a simple repository layout for code, tests, and assets
+ - contributor guidance that keeps human and agent work aligned as the project grows
+ - a few skills that can be automatically invoked by the agent if needed to assist with planning, implementation, and code review of features
+
+See more at the repo: [github.com/xklob/codex-repo-template](https://github.com/xklob/codex-repo-template)
 
 ## Tarkin
 
